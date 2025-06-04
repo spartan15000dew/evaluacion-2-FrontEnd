@@ -13,7 +13,7 @@ function validar() {
     let EerrorContrasena= document.getElementById("errorPassword")
 
     let conjunto_de_ambos = true
-    if(Vtelefono.length >= 8){
+    if(Vtelefono.length == 8){
         EerrorTelefono.innerText =""
         Etelefono.style.backgroundColor = "Green"
         Etelefono.style.color = "white"
@@ -48,7 +48,6 @@ function validar() {
 
 function cargarDatos() {
     let eCuerpoTabla = document.getElementById("cuerpoTabla")
-    let telefonosmap = telefonos.map
     eCuerpoTabla.innerHTML = ""
 
     telefonos.forEach((span,index)=>{
